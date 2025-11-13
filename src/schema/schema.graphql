@@ -1,0 +1,22 @@
+type Query {
+  recommendations: Recommendations!
+}
+
+type Recommendations {
+  """
+  Total risk is the total risk score accross the entire inventory.
+  """
+  totalRisk: Float!
+  """
+  Critical exposures is the number of findings that need immediate attention.
+  """
+  criticalExposures: Int!
+  """
+  Compliance is the percentage of passing checks.
+  """
+  compliance: Float!
+  """
+  Speed is the average time to close critical findings in minutes.
+  """
+  speed: Float!
+}
