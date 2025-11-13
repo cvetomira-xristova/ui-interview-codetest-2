@@ -3,4 +3,5 @@ type Query {
   metrics: Metrics!
   user: User!
   teams(spaceId: ID!): [Team!]!
+  tickets(spaceId: ID!): [Ticket!]!
 }

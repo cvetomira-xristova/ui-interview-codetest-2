@@ -1,0 +1,30 @@
+type Ticket {
+  """
+  ID is the unique identifier for the ticket.
+  """
+  id: ID!
+  """
+  Title is the title of the ticket.
+  """
+  title: String!
+  """
+  Health is the health of the ticket
+  """
+  health: Float!
+  """
+  createdAt is the date the ticket was created.
+  """
+  createdAt: String!
+  """
+  owner is the ownerId of the ticket.
+  """
+  ownerId: ID!
+  """
+  Progress is the progress of the ticket in 0 to 100.
+  """
+  progress: Float!
+  """
+  SpaceId is the space the ticket is associated with.
+  """
+  spaceId: ID!
+}
