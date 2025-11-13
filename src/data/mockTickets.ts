@@ -1,7 +1,8 @@
 export const mockTickets = [
   {
     id: "1",
-    title: "Launch of Artemis I",
+    title:
+      "Launch of Artemis I - Complete Pre-Flight Systems Check Including Fuel Cell Verification, Navigation Computer Diagnostics, Heat Shield Inspection, Communication Array Testing, and Final Mission Control Approval Sequence",
     health: 4.12,
     createdAt: "2024-01-15",
     ownerId: "1",
@@ -37,7 +38,8 @@ export const mockTickets = [
   },
   {
     id: "5",
-    title: "Gateway Module Assembly",
+    title:
+      "Gateway Module Assembly - Coordinate Multi-National Team for Structural Integration, Power System Installation, Life Support Configuration, Docking Mechanism Calibration, and Comprehensive Quality Assurance Testing Protocol",
     health: 5.7,
     createdAt: "2024-02-10",
     ownerId: "1",
@@ -82,7 +84,8 @@ export const mockTickets = [
   },
   {
     id: "10",
-    title: "Orion Capsule Heat Shield Upgrade",
+    title:
+      "Orion Capsule Heat Shield Upgrade - Implementation of Next-Generation Thermal Protection Materials, Ablative Coating Application, Structural Reinforcement, High-Temperature Testing in Simulation Chamber, and Final Safety Certification",
     health: 4.5,
     createdAt: "2024-02-22",
     ownerId: "1",
@@ -127,7 +130,8 @@ export const mockTickets = [
   },
   {
     id: "15",
-    title: "Spacewalk Equipment Maintenance",
+    title:
+      "Spacewalk Equipment Maintenance - Comprehensive Inspection and Servicing of EVA Suits, Oxygen Supply Systems, Communication Devices, Tether Mechanisms, Tool Storage Units, Emergency Backup Systems, and Mobility Joint Lubrication",
     health: 4.9,
     createdAt: "2024-03-10",
     ownerId: "1",
@@ -172,7 +176,8 @@ export const mockTickets = [
   },
   {
     id: "20",
-    title: "Titan Submarine Design Review",
+    title:
+      "Titan Submarine Design Review - Evaluation of Cryogenic Liquid Methane Navigation Systems, Pressure Hull Integrity Analysis, Scientific Instrument Package Configuration, Autonomous Control Systems, and Long-Duration Mission Sustainability Protocols",
     health: 6.6,
     createdAt: "2024-03-22",
     ownerId: "2",
@@ -217,7 +222,8 @@ export const mockTickets = [
   },
   {
     id: "25",
-    title: "Lunar Resource Extraction Study",
+    title:
+      "Lunar Resource Extraction Study - Comprehensive Analysis of Regolith Mining Techniques, Water Ice Harvesting from Permanently Shadowed Craters, Rare Earth Element Processing, In-Situ Resource Utilization Infrastructure, and Economic Feasibility Assessment",
     health: 6.4,
     createdAt: "2024-04-05",
     ownerId: "1",
@@ -262,7 +268,8 @@ export const mockTickets = [
   },
   {
     id: "30",
-    title: "Astronaut Training VR Simulation",
+    title:
+      "Astronaut Training VR Simulation - Development of Immersive Virtual Reality Environment for Spacewalk Practice, Emergency Scenario Response Training, Equipment Operation Familiarization, Team Communication Exercises, and Mission-Specific Task Rehearsal",
     health: 8.4,
     createdAt: "2024-04-18",
     ownerId: "1",
@@ -307,7 +314,8 @@ export const mockTickets = [
   },
   {
     id: "35",
-    title: "Thermal Protection System Test",
+    title:
+      "Thermal Protection System Test - Rigorous Testing of Heat-Resistant Tiles and Blankets Under Simulated Re-Entry Conditions, Material Stress Analysis, Temperature Distribution Mapping, Structural Integrity Verification, and Performance Optimization",
     health: 6.1,
     createdAt: "2024-04-28",
     ownerId: "1",
@@ -352,7 +360,8 @@ export const mockTickets = [
   },
   {
     id: "40",
-    title: "Check Andy's Workstation Logs",
+    title:
+      "Check Andy's Workstation Logs - Comprehensive Review of System Access Records, File Modification History, Network Activity Patterns, Application Usage Data, Communication Timestamps, and Cross-Reference with Security Camera Footage for Timeline Reconstruction",
     health: 6.7,
     createdAt: "2024-05-08",
     ownerId: "2",
@@ -397,7 +406,8 @@ export const mockTickets = [
   },
   {
     id: "45",
-    title: "Black Hole Event Horizon Study",
+    title:
+      "Black Hole Event Horizon Study - Advanced Analysis of Gravitational Lensing Effects, Hawking Radiation Detection Attempts, Accretion Disk Dynamics Modeling, Spacetime Curvature Calculations, and Theoretical Implications for General Relativity",
     health: 9.2,
     createdAt: "2024-05-18",
     ownerId: "1",
