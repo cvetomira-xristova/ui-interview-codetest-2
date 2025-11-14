@@ -6,6 +6,18 @@ export const GET_USER = graphql(`
       id
       name
       email
+      avatar
+      role
+      spaces {
+        id
+        name
+        avatar
+        teams {
+          id
+          name
+          spaceId
+        }
+      }
     }
   }
 `);

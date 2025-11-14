@@ -1,6 +1,6 @@
 /* eslint-disable */
 import * as types from './graphql';
-import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/core';
+import type { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/core';
 
 /**
  * Map of all GraphQL operations in the project.
@@ -14,10 +14,10 @@ import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/
  * Learn more about it here: https://the-guild.dev/graphql/codegen/plugins/presets/preset-client#reducing-bundle-size
  */
 type Documents = {
-    "\n  query GetUser {\n    user {\n      id\n      name\n      email\n    }\n  }\n": typeof types.GetUserDocument,
+    "\n  query GetUser {\n    user {\n      id\n      name\n      email\n      avatar\n      role\n      spaces {\n        id\n        name\n        avatar\n        teams {\n          id\n          name\n          spaceId\n        }\n      }\n    }\n  }\n": typeof types.GetUserDocument,
 };
 const documents: Documents = {
-    "\n  query GetUser {\n    user {\n      id\n      name\n      email\n    }\n  }\n": types.GetUserDocument,
+    "\n  query GetUser {\n    user {\n      id\n      name\n      email\n      avatar\n      role\n      spaces {\n        id\n        name\n        avatar\n        teams {\n          id\n          name\n          spaceId\n        }\n      }\n    }\n  }\n": types.GetUserDocument,
 };
 
 /**
@@ -37,7 +37,7 @@ export function graphql(source: string): unknown;
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
-export function graphql(source: "\n  query GetUser {\n    user {\n      id\n      name\n      email\n    }\n  }\n"): (typeof documents)["\n  query GetUser {\n    user {\n      id\n      name\n      email\n    }\n  }\n"];
+export function graphql(source: "\n  query GetUser {\n    user {\n      id\n      name\n      email\n      avatar\n      role\n      spaces {\n        id\n        name\n        avatar\n        teams {\n          id\n          name\n          spaceId\n        }\n      }\n    }\n  }\n"): (typeof documents)["\n  query GetUser {\n    user {\n      id\n      name\n      email\n      avatar\n      role\n      spaces {\n        id\n        name\n        avatar\n        teams {\n          id\n          name\n          spaceId\n        }\n      }\n    }\n  }\n"];
 
 export function graphql(source: string) {
   return (documents as any)[source] ?? {};

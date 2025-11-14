@@ -1,13 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import { GET_USER } from "./graphql/queries/GetUser";
+import { useQuery } from "@apollo/client/react";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const { data } = useQuery(GET_USER);
+
+  useEffect(() => {
+    console.log(data);
+  }, [data]);
 
   return (
     <>
+      <div className="data-example">
+        <pre>{JSON.stringify(data, null, 2)}</pre>
+      </div>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -29,7 +39,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
