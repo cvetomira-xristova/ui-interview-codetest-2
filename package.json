@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "pnpm -r --parallel dev",
     "build": "pnpm -r build",
-    "test": "pnpm -r test"
+    "test": "pnpm -r test",
+    "codegen": "pnpm --filter client codegen"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
