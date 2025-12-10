@@ -1,4 +1,4 @@
-import { Container, Box, CircularProgress } from "@mui/material";
+import { Container, Box } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import { useQuery } from "@apollo/client/react";
 import SpaceSwitcher from '../dashboard/SpaceSwitcher/SpaceSwitcher';

@@ -25,6 +25,7 @@ export const appTheme = createTheme({
       '"Mona Sans", "Instrument Sans", "Helvetica", "Arial", sans-serif',
   },
   components: {
+    // @ts-expect-error - MuiDataGrid is from @mui/x-data-grid and needs module augmentation
     MuiDataGrid: {
       styleOverrides: {
         root: {
