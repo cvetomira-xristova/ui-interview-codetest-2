@@ -1,4 +1,4 @@
-import { Box, Modal, Typography, TextField, IconButton } from "@mui/material";
+import { Box, Modal, Typography, TextField, IconButton, Grow } from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
 import { SearchSuggestions } from './SearchSuggestions';
 
@@ -18,15 +18,22 @@ const styles = {
     container: {
         position: "relative",
         minWidth: "50%",
-        bgcolor: "rgba(20, 20, 30, 0.95)",
+        bgcolor: "#2e1b57",
         borderRadius: 3,
         p: 4,
+        outline: "none",
     },
     header: {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
         mb: 2,
+    },
+    closeButton: {
+        transition: "transform 0.3s ease-in-out",
+        "&:hover": {
+            transform: "rotate(90deg)",
+        },
     },
 };
 
@@ -42,23 +49,26 @@ export function SearchModal({ open, onClose, searchQuery, onSearchChange }: Sear
             open={open}
             onClose={onClose}
             sx={styles.modal}
+            closeAfterTransition
         >
-            <Box sx={styles.container}>
-                <Box sx={styles.header}>
-                    <Typography variant="h6">What are you looking for?</Typography>
-                    <IconButton aria-label="close" onClick={onClose}>
-                        <CloseIcon />
-                    </IconButton>
+            <Grow in={open} timeout={600}>
+                <Box sx={styles.container}>
+                    <Box sx={styles.header}>
+                        <Typography variant="h6">What are you looking for?</Typography>
+                        <IconButton aria-label="close" onClick={onClose} sx={styles.closeButton}>
+                            <CloseIcon />
+                        </IconButton>
+                    </Box>
+                    <TextField
+                        placeholder="Search..."
+                        value={searchQuery}
+                        onChange={handleChange}
+                        autoFocus
+                        fullWidth
+                    />
+                    <SearchSuggestions />
                 </Box>
-                <TextField
-                    placeholder="Search..."
-                    value={searchQuery}
-                    onChange={handleChange}
-                    autoFocus
-                    fullWidth
-                />
-                <SearchSuggestions />
-            </Box>
+            </Grow>
         </Modal>
     );
 }
