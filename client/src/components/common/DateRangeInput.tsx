@@ -9,7 +9,7 @@ import dayjs, { Dayjs } from 'dayjs';
 const styles = {
   wrapper: {
     position: "relative",
-    padding: "0 10px",
+    padding: { xs: "0 8px", sm: "0 10px", md: "0 10px" },
     borderRadius: "50px",
     background: "radial-gradient(ellipse at top right, #c6c5c6 0%, #908d90 98.6%)",
     boxShadow: [
@@ -44,7 +44,7 @@ const styles = {
       ].join(", "),
     },
     "& .MuiPickersInputBase-root": {
-      fontSize: "14px !important",
+      fontSize: { xs: "12px", sm: "13px", md: "14px" },
       color: "#0A0A22 !important",
     },
     "& .MuiIconButton-root": {

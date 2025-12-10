@@ -9,14 +9,13 @@ import NavigationCard from '../dashboard/NavigationCard/NavigationCard';
 
 const styles = {
   container: {
-    paddingY: "24px",
-    minHeight: "100vh",
+    paddingY: { xs: "16px", sm: "20px", md: "40px" },
+    paddingX: { xs: "16px", sm: "20px", md: "40px" },
   },
   loaderContainer: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    minHeight: "100vh"
   },
 };
 
@@ -36,14 +35,14 @@ export function DashboardLayout() {
 
   return (
     <Container maxWidth="xl" sx={styles.container}>
-      <Grid container spacing={4}>
-        <Grid size={{ xs: 12, md: 3 }}>
-          <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+      <Grid container spacing={{ xs: 2, sm: 3, md: 4 }}>
+        <Grid size={{ xs: 12, sm: 12, md: 3, lg: 2 }}>
+          <Box sx={{ display: "flex", flexDirection: "column", gap: { xs: 1.5, sm: 2, md: 2 } }}>
             <NavigationCard user={user} />
             <SpaceSwitcher user={user} />
           </Box>
         </Grid>
-        <Grid size={{ xs: 12, md: 9 }}>
+        <Grid size={{ xs: 12, sm: 12, md: 9, lg: 10 }}>
           <Dashboard />
         </Grid>
       </Grid>

@@ -52,7 +52,7 @@ const SpaceSwitcher = ({ user }: SpaceSwitcherProps) => {
                             sx={spaceSwitcherStyles.spaceAvatar}
                         />
                     )}
-                    <Typography sx={{ ...theme.typography.spaceName, ...spaceSwitcherStyles.spaceName }}>
+                    <Typography sx={{ ...spaceSwitcherStyles.spaceName }}>
                         {currentSpace?.name || "Select Space"}
                     </Typography>
                 </Box>
@@ -83,7 +83,7 @@ const SpaceSwitcher = ({ user }: SpaceSwitcherProps) => {
                         <ListItemText
                             primary={space.name}
                             primaryTypographyProps={{
-                                sx: { ...theme.typography.spaceName, fontSize: "12px", fontWeight: space.id === currentSpaceId ? 600 : 400 },
+                                sx: { ...spaceSwitcherStyles.spaceName, fontSize: "12px", fontWeight: space.id === currentSpaceId ? 600 : 400 },
                             }}
                         />
                     </MenuItem>

@@ -8,7 +8,8 @@ const styles = {
     color: "white",
     textTransform: "none",
     fontWeight: 500,
-    padding: "12px 24px",
+    padding: { xs: "10px 16px", sm: "11px 20px", md: "12px 24px" },
+    fontSize: { xs: "13px", sm: "14px", md: "14px" },
     borderRadius: "50px",
     border: "none",
     boxShadow: `

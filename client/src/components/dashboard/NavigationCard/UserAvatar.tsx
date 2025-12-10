@@ -6,7 +6,7 @@ const userAvatarStyles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    pb: 4,
+    pb: { xs: 2, sm: 3, md: 4 },
   },
 };
 

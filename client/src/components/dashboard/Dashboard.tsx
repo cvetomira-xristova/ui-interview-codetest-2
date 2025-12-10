@@ -1,12 +1,12 @@
 import Grid from "@mui/material/Grid";
 import Header from "./Header";
-import RecommendationsCard from "./RecommendationsCard";
+import RecommendationsCard from "./RecommendationsCard/RecommendationsCard";
 import MetricCards from "./Metrics/MetricCards";
 import TicketsTable from "./TicketsTable";
 
 const Dashboard = () => {
     return (
-        <Grid container>
+        <Grid container spacing={{ xs: 2, sm: 3 }}>
             <Grid size={{ xs: 12 }}>
                 <Header />
             </Grid>
