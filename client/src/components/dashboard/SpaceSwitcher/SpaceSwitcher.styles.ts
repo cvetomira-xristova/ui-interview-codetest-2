@@ -1,0 +1,82 @@
+export const spaceSwitcherStyles = {
+  card: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    p: "16px 24px",
+    gap: "2px",
+    width: "240px",
+    height: "51px",
+    background: "rgba(0, 0, 0, 0.5)",
+    boxShadow: "0px 16px 16px rgba(0, 0, 0, 0.08), inset 1px 1px 2px rgba(255, 255, 255, 0.32)",
+    backdropFilter: "blur(12px)",
+    borderRadius: "24px",
+  },
+  button: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    p: 0,
+    gap: "2px",
+    textTransform: "none",
+    color: "inherit",
+  },
+  buttonContent: {
+    display: "flex",
+    alignItems: "center",
+    gap: "2px",
+    flex: 1,
+    minWidth: 0,
+  },
+  spaceAvatar: {
+    width: "24px",
+    height: "24px",
+    background: "#F8F5DE",
+    border: "0.5px solid rgba(0, 0, 0, 0.1)",
+    borderRadius: "4px",
+    objectFit: "contain",
+    flexShrink: 0,
+  },
+  spaceName: {
+    fontSize: "14px",
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
+  },
+  arrowIcon: {
+    width: "16px",
+    height: "16px",
+    color: "#FFFFFF",
+    flexShrink: 0,
+  },
+  menu: {
+    mt: 1,
+    minWidth: 280,
+    backdropFilter: "blur(20px)",
+    border: "1px solid rgba(255, 255, 255, 0.1)",
+    borderRadius: 2,
+    "& .MuiMenuItem-root:not(.Mui-selected)": {
+      "&:hover": { background: "rgba(255, 255, 255, 0.08)" },
+    },
+  },
+  menuItem: {
+    fontSize: "12px",
+    py: 1.5,
+    px: 2,
+    "&.Mui-selected": {
+      background: "rgba(248, 245, 222, 0.2)",
+      "&:hover": { background: "rgba(248, 245, 222, 0.2)" },
+    },
+  },
+  menuItemIcon: {
+    minWidth: 40,
+  },
+  menuItemAvatar: {
+    width: 24,
+    height: 24,
+    borderRadius: 1,
+    objectFit: "contain",
+  },
+};
+
