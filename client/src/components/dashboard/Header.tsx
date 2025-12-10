@@ -8,10 +8,9 @@ const styles = {
     flexDirection: { xs: 'column', md: 'row' },
     justifyContent: 'space-between',
     alignItems: { xs: 'flex-start', md: 'center' },
-    paddingTop: { xs: " 24px" },
-    marginBottom: { xs: 16, sm: 20, md: 24 },
     width: '100%',
     gap: { xs: 2, md: 0 },
+    paddingTop: { xs: "16px", sm: "24px", md: "32px" },
   },
   headerTitle: {
     fontWeight: 600,

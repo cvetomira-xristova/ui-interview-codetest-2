@@ -1,7 +1,7 @@
 import Grid from "@mui/material/Grid";
 import Header from "./Header";
 import RecommendationsCard from "./RecommendationsCard/RecommendationsCard";
-import MetricCards from "./Metrics/MetricCards";
+import Metrics from "./Metrics/Metrics";
 import TicketsTable from "./TicketsTable";
 
 const Dashboard = () => {
@@ -14,7 +14,7 @@ const Dashboard = () => {
                 <RecommendationsCard />
             </Grid>
             <Grid size={{ xs: 12 }}>
-                <MetricCards />
+                <Metrics />
             </Grid>
             <Grid size={{ xs: 12 }}>
                 <TicketsTable />
