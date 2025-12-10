@@ -2,7 +2,7 @@ import Grid from "@mui/material/Grid";
 import Header from "./Header";
 import RecommendationsCard from "./RecommendationsCard/RecommendationsCard";
 import Metrics from "./Metrics/Metrics";
-import TicketsTable from "./TicketsTable";
+import TicketsTable from "../TicketsTable/TicketsTable";
 
 const Dashboard = () => {
     return (
