@@ -12,6 +12,11 @@ export const spaceSwitcherStyles = {
     boxShadow: "0px 16px 16px rgba(0, 0, 0, 0.08), inset 1px 1px 2px rgba(255, 255, 255, 0.32)",
     backdropFilter: "blur(12px)",
     borderRadius: "24px",
+    "&:hover": {
+      background: "rgba(0, 0, 0, 0.4)",
+      cursor: "pointer"
+    },
+
   },
   button: {
     display: "flex",

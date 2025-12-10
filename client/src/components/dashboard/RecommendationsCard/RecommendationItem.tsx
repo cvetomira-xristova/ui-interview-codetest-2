@@ -26,6 +26,11 @@ const styles = {
         background: "rgba(0, 0, 0, 0.1)",
         borderRadius: "6px",
         boxSizing: "border-box",
+        "&:hover": {
+            background: "rgba(255, 255, 255, 0.05)",
+            cursor: "pointer"
+        },
+
     },
     actionTextPrimary: {
         width: "auto",
@@ -58,9 +63,6 @@ const styles = {
         textOverflow: "ellipsis",
         whiteSpace: "nowrap",
         minWidth: 0,
-        '&:hover': {
-            cursor: "pointer",
-        }
     },
     fixBadge: {
         width: "auto",

@@ -16,6 +16,10 @@ const styles = {
         borderRadius: "24px",
         position: "relative",
         overflow: "hidden",
+        "&:hover": {
+            background: "rgba(255, 255, 255, 0.05)",
+            cursor: "pointer"
+        },
     },
     textContainer: {
         display: "flex",
