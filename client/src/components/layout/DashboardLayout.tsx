@@ -20,18 +20,8 @@ const styles = {
 };
 
 export function DashboardLayout() {
-  const { data, loading } = useQuery<GetUserQuery>(GET_USER);
+  const { data } = useQuery<GetUserQuery>(GET_USER);
   const user = data?.user;
-
-  if (loading) {
-    return (
-      <Container maxWidth="xl" sx={styles.container}>
-        <Box sx={styles.loaderContainer}>
-          <CircularProgress />
-        </Box>
-      </Container>
-    );
-  }
 
   return (
     <Container maxWidth="xl" sx={styles.container}>
